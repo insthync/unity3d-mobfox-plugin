@@ -50,7 +50,7 @@ public class MobfoxPlugin {
 #if UNITY_IPHONE
 		mobFoxObj = _MobfoxPlugin_Init(publisherId);
 #elif UNITY_ANDROID
-		mobFoxObj = new AndroidJavaObject("com.dirtypant.mobfox.MobfoxPlugin");
+		mobFoxObj = new AndroidJavaObject("com.insthync.mobfox.MobfoxPlugin");
 		mobFoxObj.Call("Init", publisherId);
 #endif
 	}
@@ -64,7 +64,7 @@ public class MobfoxPlugin {
 #if UNITY_IPHONE
 		_MobfoxPlugin_SetCallbackGameObject(mobFoxObj, gameObj);
 #elif UNITY_ANDROID
-		mobFoxObj = new AndroidJavaObject("com.dirtypant.mobfox.MobfoxPlugin");
+		mobFoxObj = new AndroidJavaObject("com.insthync.mobfox.MobfoxPlugin");
 		mobFoxObj.Call("SetCallbackGameObject", gameObj);
 #endif
 	}

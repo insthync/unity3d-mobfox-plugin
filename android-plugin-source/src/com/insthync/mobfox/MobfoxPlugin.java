@@ -1,4 +1,4 @@
-package com.dirtypant.mobfox;
+package com.insthync.mobfox;
 
 import android.app.Activity;
 import android.util.Log;
